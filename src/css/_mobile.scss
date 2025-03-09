@@ -1,1 +1,166 @@
+@media (max-width: 1118px) {
+  .container {
+    .left {
+      width: 381px;
+      .card-front {
+        width: 100%;
+        height: auto;
+        padding: 23px 29px;
+        .card-sign {
+          width: 70px;
+        }
+        .card-number {
+          font-size: 23px;
+          letter-spacing: 2.8px;
+          margin: 36px 0 26px;
+        }
+        .card-footer {
+          .card-name,
+          .card-date {
+            font-size: 12px;
+            letter-spacing: 1.4px;
+          }
+        }
+      }
+      .card-back {
+        width: 100%;
+        height: 203.8px;
+        .card-cvc {
+          font-size: 12px;
+          top: 93px;
+          right: 48px;
+        }
+      }
+    }
+  }
+}
 
+@media (max-width: 924px) {
+  body {
+    position: static;
+    .app-bg {
+      right: 0;
+      height: 330px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+    }
+  }
+  .container {
+    flex-direction: column;
+    margin-top: 64px;
+    justify-content: flex-start;
+    .left {
+      margin-right: 0;
+      width: 456.5px;
+      .card-front {
+        width: 381px;
+        order: 1;
+        margin-bottom: 0;
+        transform: translateY(-89px);
+      }
+      .card-back {
+        width: 381px;
+        height: 206.2px;
+        z-index: 1;
+      }
+    }
+    .right {
+      margin-top: -25px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding-bottom: 80px;
+      form {
+        width: 80%;
+      }
+      .thank-you {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .cta-btn {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: 685px) {
+  .cta-btn {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    .app-bg {
+      height: 240px;
+    }
+  }
+  .container {
+    margin-top: 32px;
+    .left {
+      width: 100%;
+      padding: 0 16px;
+      .card-front {
+        width: 286px;
+        padding: 18px 20px 20px;
+        transform: translateY(-63px);
+        .card-sign svg {
+          width: 54px;
+          height: 31px;
+        }
+        .card-number {
+          font-size: 18px;
+          letter-spacing: 2.196px;
+          margin: 36px 0 16px;
+        }
+        .card-footer {
+          .card-name,
+          .card-date {
+            font-size: 10px;
+            letter-spacing: 0.7px;
+          }
+        }
+      }
+      .card-back {
+        width: 286px;
+        height: 157px;
+        border-radius: 10px;
+        .card-cvc {
+          top: 71px;
+          right: 38px;
+          font-size: 10px;
+          letter-spacing: 0.72px;
+        }
+      }
+    }
+    .right {
+      margin-top: -15px;
+      padding-bottom: 46px;
+      form {
+        width: 100%;
+        padding: 0 24px;
+        > .form-group {
+          margin-bottom: 20px;
+        }
+        .row {
+          margin-bottom: 28px;
+          .quarter {
+            margin-right: 11px;
+            .inputs input:first-of-type {
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+      .thank-you {
+        .thank-subtitle {
+          margin-bottom: 48px;
+        }
+      }
+    }
+  }
+}

@@ -43,6 +43,8 @@ body .app-bg {
   height: 100%;
   width: 32%;
   position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -1;
   left: 0;
   top: 0;
@@ -257,8 +259,6 @@ body .app-bg {
     right: 0;
     height: 330px;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: absolute;
   }
   .container {

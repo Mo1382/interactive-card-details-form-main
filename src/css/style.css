@@ -36,4 +36,183 @@ input {
 
 body {
   background-color: #ffffff;
+  position: relative;
+}
+body .app-bg {
+  background-image: url("../../public/images/bg-main-desktop.png");
+  height: 100%;
+  width: 32%;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.container .left {
+  width: 541px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 127px;
+}
+.container .left .card-front {
+  align-self: flex-start;
+  padding: 28px 32px 26px;
+  background-image: url("../../public/images/bg-card-front.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 37px;
+  width: 447px;
+  height: 245px;
+}
+.container .left .card-front .card-number {
+  margin: 45px 0;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 3.416px;
+}
+.container .left .card-front .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .left .card-front .card-footer .card-name,
+.container .left .card-front .card-footer .card-date {
+  color: #dedddf;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.988px;
+}
+.container .left .card-back {
+  background-image: url("../../public/images/bg-card-back.png");
+  background-position: center;
+  background-size: cover;
+  align-self: flex-end;
+  width: 447px;
+  height: 245px;
+  position: relative;
+}
+.container .left .card-back .card-cvc {
+  position: absolute;
+  top: 111px;
+  right: 59px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.788px;
+}
+.container .right form {
+  width: 381px;
+}
+.container .right form > .form-group {
+  margin-bottom: 26px;
+}
+.container .right form .form-group label {
+  margin-bottom: 9px;
+  color: #21092f;
+  font-size: 12px;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 1.98px;
+}
+.container .right form .form-group input {
+  background-color: transparent;
+  width: 100%;
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid #dedddf;
+  padding: 0 16px;
+  font-size: 18px;
+  transition: border-color 0.3s ease-in-out;
+  font-weight: 500;
+  color: #21092f;
+}
+.container .right form .form-group input::-moz-placeholder {
+  color: #bcbabd;
+}
+.container .right form .form-group input::placeholder {
+  color: #bcbabd;
+}
+.container .right form .form-group input:hover {
+  border-color: #6448fe;
+}
+.container .right form .form-group input:focus {
+  border-color: #600594 !important;
+}
+.container .right form .form-group input.error {
+  border-color: #ff5252;
+}
+.container .right form .form-group .error-msg {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #ff5252;
+  display: inline-block;
+  font-weight: 500;
+}
+.container .right form .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.container .right form .row .quarter {
+  display: inline-flex;
+  flex-basis: 47.5%;
+  margin-right: 20px;
+  flex-direction: column;
+}
+.container .right form .row .quarter .inputs {
+  display: flex;
+}
+.container .right form .row .quarter .inputs input {
+  flex-basis: 50%;
+}
+.container .right form .row .quarter .inputs input:first-of-type {
+  margin-right: 10px;
+}
+.container .right form .row .half {
+  display: inline-flex;
+  flex-direction: column;
+  flex-basis: 52.5%;
+}
+.container .right .thank-you {
+  width: 381px;
+  text-align: center;
+}
+.container .right .thank-you .thank-title {
+  margin: 36px 0 16px;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 3.5px;
+  color: #21092f;
+}
+.container .right .thank-you .thank-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #8e8593;
+  margin-bottom: 46px;
+}
+.container .right .cta-btn {
+  width: 100%;
+  height: 53px;
+  border-radius: 8px;
+  background-color: #21092f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.container .right .cta-btn:hover {
+  background-color: rgb(98, 16, 158);
 }/*# sourceMappingURL=style.css.map */

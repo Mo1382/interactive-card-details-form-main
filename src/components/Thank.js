@@ -1,9 +1,9 @@
 import React from "react";
 import Button from "./Button";
 
-export default function Thank() {
+export default function Thank({ onConfirm }) {
   return (
-    <div class="thank-you">
+    <form onSubmit={onConfirm} class="thank-you">
       <div class="thank-icon">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ export default function Thank() {
       </div>
       <div class="thank-title">THANK YOU!</div>
       <div class="thank-subtitle">We’ve added your card details</div>
-      <Button />
-    </div>
+      <Button onConfirm={onConfirm} />
+    </form>
   );
 }

@@ -1,6 +1,9 @@
 import React from "react";
 
-export default function CardFront() {
+export default function CardFront({ name, number, expMonth, expYear }) {
+  const expMonthStr = String(expMonth);
+  const expYearStr = String(expYear);
+
   return (
     <div className="card-front">
       <div className="card-sign">
@@ -28,10 +31,17 @@ export default function CardFront() {
           </defs>
         </svg>
       </div>
-      <div className="card-number">0000 0000 0000 0000</div>
+      <div className="card-number">
+        {number === "" ? "0000 0000 0000 0000" : number}
+      </div>
       <div className="card-footer">
-        <div className="card-name">JANE APPLESEED</div>
-        <div className="card-date">00/00</div>
+        <div className="card-name">
+          {name === "" ? "YOUR NAME" : name.toUpperCase()}
+        </div>
+        <div className="card-date">
+          {expMonthStr === "" ? "00" : expMonthStr.padStart(2, 0)}/
+          {expYearStr === "" ? "00" : expYearStr.padStart(2, 0)}
+        </div>
       </div>
     </div>
   );
